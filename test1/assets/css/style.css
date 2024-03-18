@@ -1,0 +1,121 @@
+body {
+    background: url(../img/holiday-pic.jpg)  center / cover no-repeat;
+    font-family: Arial, sans-serif;
+}
+.body-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.results{
+    flex-basis: 70%;
+    margin: 50px auto;
+}
+.results_disponibilita {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    background: url(../img/hotel-room.jpg) center / cover no-repeat;
+    min-height: 200px;
+    border-radius: 1rem;
+    position: relative;
+}
+.results_titolo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.results_prenota{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 5px 25px;
+}
+#booking-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 30%;
+    height: fit-content;
+}
+.form-title{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+#booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, .7);
+}
+#booking-form input:focus{
+    outline: none;
+    border: 1px solid #007bff;
+}
+
+#booking-form input::placeholder {
+    color: #999;
+}
+
+#booking-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+#booking-form button:hover {
+    background-color: #0056b3;
+}
+#container-numero-notti {
+    display: none;
+    margin-bottom: 15px;
+}
+.modal{
+    color:#fff;
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.modal-content{
+    text-align: center;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.modal-close{
+    cursor: pointer;
+}
+#booking-summary{
+    color: #fff;
+}
+
+@media(max-width: 968px){
+    .body-container{
+        flex-direction: column;
+    }
+    .results{
+        margin: 50px;
+    }
+}

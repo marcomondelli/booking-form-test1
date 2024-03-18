@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <section class="body-container">
+        <form id="booking-form">
+            <div class="form-title">Cerca al miglior prezzo</div>
+            <input type="text" id="arrivo" placeholder="Arrivo" required>
+            
+            <input type="text" id="partenza" placeholder="Partenza" required>
+            
+            <div id="container-numero-notti">
+                Numero di notti <span id="numero-notti"></span>
+            </div>
+            
+            <input type="number" id="adulti" placeholder="Adulti" min="1" required>
+            
+            <input type="number" id="bambini" placeholder="Bambini" min="0" required>
+            
+            <input type="text" id="promo-code" placeholder="Codice Promozionale">
+            
+            <button type="submit">Controlla disponibilità</button>
+        </form>
+
+        <div class="results">
+            <div class="results_disponibilita">
+                <div class="results_titolo">Camera doppia</div>
+                <div class="results_testo">Lorem ipsum ....</div>
+                <button class="results_prenota">Prenota</button>
+            </div>
+            <div class="results_disponibilita">
+                <div class="results_titolo">Camera doppia</div>
+                <div class="results_testo">Lorem ipsum ....</div>
+                <button class="results_prenota">Prenota</button>
+            </div>
+            <div class="results_disponibilita">
+                <div class="results_titolo">Camera doppia</div>
+                <div class="results_testo">Lorem ipsum ....</div>
+                <button class="results_prenota">Prenota</button>
+            </div>
+        </div>
+    </section>
+    <!-- Formulario prenotazione -->
+    
+
+    <!-- Modal codice promozionale invalido  -->
+    <div class="modal" id="codice-invalido">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    Il coupon / codice sconto inserito non è valido!
+                </div>
+                <div class="modal-close" data-bs-dismiss="modal">OK</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal di conferma disponibilità -->
+    <div class="modal" id="modal-prenotazione">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="booking-summary"></div>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Prenota</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
